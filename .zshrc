@@ -383,4 +383,8 @@ eval "$(mcfly init zsh)"
 
 ## Run neofetch
 #neofetch
+eval "$(zoxide init --cmd cd zsh)"
 
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
