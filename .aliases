@@ -1,0 +1,8 @@
+# ---- System ----
+alias shutdown="shutdown now"
+alias reboot="reboot now"
+
+# ---- Misc ----
+alias zshconf="nvim ~/.zshrc"
+alias aliases="nvim ~/.aliases"
+alias cat="bat"
