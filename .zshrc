@@ -393,3 +393,11 @@ eval "$(zoxide init --cmd cd zsh)"
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
 
 eval "$(atuin init zsh)"
+
+# pnpm
+export PNPM_HOME="/home/lux/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
